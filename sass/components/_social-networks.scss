@@ -1,0 +1,25 @@
+.social-networks {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social-networks__link {
+	display: block;
+	padding: 12px;
+	border-radius: 50%;
+	color: var(--social-icon-color);
+
+	transition: color 250ms var(--cubic-bezier),
+		background-color 250ms var(--cubic-bezier);
+
+	&:hover,
+	&:focus {
+		color: var(--main-background-color);
+		background-color: var(--text-selection-color);
+	}
+}
+
+.social-networks__icon {
+	fill: currentColor;
+}

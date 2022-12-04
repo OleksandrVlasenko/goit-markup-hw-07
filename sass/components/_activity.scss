@@ -1,0 +1,44 @@
+.activity {
+	padding-top: 0;
+}
+
+.activity__list {
+	display: flex;
+	gap: 30px;
+}
+
+.activity__title,
+.team__title {
+	margin-bottom: 50px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: var(--main-text-color);
+}
+
+.activity__item {
+	position: relative;
+}
+
+.activity__description {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 70px;
+
+	font-weight: 700;
+	line-height: 1.14;
+
+	text-transform: uppercase;
+
+	color: var(--main-background-color);
+	background-color: rgba(47, 48, 58, 0.8);
+}

@@ -1,61 +1,65 @@
-header {
-	background-color: var(--main-background-color);
-	border-bottom: 1px solid #ececec;
-}
+// header {
+// 	background-color: var(--main-background-color);
+// 	border-bottom: 1px solid #ececec;
+// }
 
-.main-nav,
-.nav,
-.nav__menu,
-.contacts-header {
-	display: flex;
-	align-items: center;
-}
+// // .main-nav,
+// // .nav,
+// // .nav__menu,
+// // .contacts-header {
+// // 	display: flex;
+// // 	align-items: center;
+// // }
 
-.contacts-header {
-	margin-left: auto;
-	gap: 50px;
-}
+// .nav, .contacts-header {
+// 	display: none;
+// }
 
-.nav__link,
-.contacts-header__link {
-	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	color: var(--main-text-color);
+// // .contacts-header {
+// // 	margin-left: auto;
+// // 	gap: 50px;
+// // }
 
-	transition: color 250ms var(--cubic-bezier);
-}
+// // .nav__link,
+// // .contacts-header__link {
+// // 	display: block;
+// // 	padding-top: 32px;
+// // 	padding-bottom: 32px;
+// // 	font-weight: 500;
+// // 	font-size: 14px;
+// // 	line-height: 1.14;
+// // 	letter-spacing: 0.02em;
+// // 	color: var(--main-text-color);
 
-.nav__menu {
-	gap: 50px;
-	margin-left: 93px;
-}
+// // 	transition: color 250ms var(--cubic-bezier);
+// // }
 
-.nav__link {
-	position: relative;
+// // .nav__menu {
+// // 	// gap: 50px;
+// // 	margin-left: 93px;
+// // }
 
-	&:hover,
-	&:focus {
-		color: var(--text-selection-color);
-	}
-}
+// // .nav__link {
+// // 	position: relative;
 
-.contacts-header__link {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	color: var(--descriptions-text-color);
+// // 	&:hover,
+// // 	&:focus {
+// // 		color: var(--text-selection-color);
+// // 	}
+// // }
 
-	&:hover,
-	&:focus {
-		color: var(--text-selection-color);
-	}
-}
+// // .contacts-header__link {
+// // 	display: flex;
+// // 	align-items: center;
+// // 	gap: 10px;
+// // 	color: var(--descriptions-text-color);
 
-.contacts-header__icon {
-	fill: currentColor;
-}
+// // 	&:hover,
+// // 	&:focus {
+// // 		color: var(--text-selection-color);
+// // 	}
+// // }
+
+// // .contacts-header__icon {
+// // 	fill: currentColor;
+// // }

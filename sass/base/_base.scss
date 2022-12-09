@@ -4,4 +4,14 @@ body {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
+
+}
+
+section {
+	padding: 60px 0px;
+
+	@media screen and (min-width: 1200px) {
+		padding: 94px 0px;
+	}
+	
 }

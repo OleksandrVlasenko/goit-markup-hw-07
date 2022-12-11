@@ -2,7 +2,7 @@
 @import "./utils/modern-normalize";
 @import "./utils/variables";
 @import "./utils/vissualy-hidden";
-@import "./utils/current-link";
+
 
 // Base styles
 @import "./base/reset";
@@ -24,3 +24,6 @@
 @import "./components/filter-button";
 @import "./components/portfolio";
 @import "./components/modal";
+
+// Utils styles
+@import "./utils/current-link";

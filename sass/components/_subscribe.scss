@@ -18,20 +18,7 @@
 
 .subscribe__input {
 	padding: 0 0 0 16px;
-	margin-right: 16px;
-
-	width: 358px;
 	height: 50px;
-
-	@media screen and (max-width: 1199px) {
-		display: block;
-
-		margin-right: auto;
-		margin-left: auto;
-		margin-bottom: 20px;
-
-		max-width: 450px;
-	}
 
 	font-family: "Roboto";
 	font-style: normal;
@@ -48,6 +35,28 @@
 	outline: none;
 
 	transition: border-color 250ms var(--cubic-bezier);
+
+	@media screen and (max-width: 479px) {
+		width: 100%;
+
+		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: 480px) and (max-width: 1199px) {
+		display: block;
+
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+
+		width: 450px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 16px;
+
+		width: 358px;
+	}
 
 	&::placeholder {
 		font-family: "Roboto";

@@ -20,6 +20,10 @@
 
 	cursor: pointer;
 
+	@media screen and (max-width: 229px) {
+		width: 100%;
+	}
+
 	&:hover,
 	&:focus {
 		background-color: var(--button-hover-color);

@@ -5,13 +5,23 @@
 }
 
 .social-networks__link {
-	display: block;
-	padding: 12px;
+	outline: orange solid 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 44px;
+	height: 44px;
 	border-radius: 50%;
 	color: var(--social-icon-color);
 
 	transition: color 250ms var(--cubic-bezier),
 		background-color 250ms var(--cubic-bezier);
+
+	@media screen and (max-width: 235px) {
+		width: calc((100vw - 60px) / 4);
+		height: calc((100vw - 60px) / 4);
+	}
 
 	&:hover,
 	&:focus {
@@ -22,4 +32,9 @@
 
 .social-networks__icon {
 	fill: currentColor;
+
+	@media screen and (max-width: 235px) {
+		width: 15px;
+		height: 15px;
+	}
 }

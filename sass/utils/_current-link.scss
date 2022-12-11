@@ -1,7 +1,8 @@
 .current-link {
 	color: var(--text-selection-color);
 
-	&::after {
+	@media screen and (min-width: 768px) {
+		&::after {
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -13,5 +14,6 @@
 
 		background: var(--text-selection-color);
 		border-radius: 2px;
+	}
 	}
 }

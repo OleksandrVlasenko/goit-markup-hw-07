@@ -17,13 +17,26 @@ header {
 	}
 }
 
-.mob-menu-open__icon,
-.mob-menu-close__icon {
+.mob-menu-open__button,
+.mob-menu-close__button {
 	position: absolute;
 	top: 10px;
 	right: 15px;
 
-	fill: var(--main-text-color);
+	min-height: 40px;
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 0;
+	padding: 0;
+	color: var(--main-text-color);
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	outline: none;
 
 	transition: fill 250ms var(--cubic-bezier);
 
@@ -37,23 +50,30 @@ header {
 	}
 }
 
+.mob-menu-open__icon,
+.mob-menu-close__icon {
+	fill: currentColor;
+}
+
 .mobile-menu {
 	width: 100%;
 
 	@media screen and (max-width: 767px) {
 		position: fixed;
 		top: 0;
-		right: 0;
+		right: -100%;
 		height: 100%;
 
-		// transform: translateY(0);
 		background-color: var(--main-background-color);
+
+    transform: translateX(0);
+		transition: transform 250ms var(--cubic-bezier);
 	}
 }
 
-.mob-menu--is-hidden {
+.mob-menu--is-open {
 	@media screen and (max-width: 767px) {
-		display: none;
+		transform: translateX(-100%);
 	}
 }
 

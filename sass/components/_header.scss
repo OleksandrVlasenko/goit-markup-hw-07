@@ -12,6 +12,7 @@ header {
 .main-nav {
 	@media screen and (max-width: 767px) {
 		position: relative;
+
 		height: 60px;
 	}
 }
@@ -40,12 +41,12 @@ header {
 	width: 100%;
 
 	@media screen and (max-width: 767px) {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		right: 0;
-		height: 100vh;
+		height: 100%;
 
-    transform: translateY(0);
+		// transform: translateY(0);
 		background-color: var(--main-background-color);
 	}
 }
@@ -149,15 +150,25 @@ header {
 }
 
 .contacts-header__link--mail {
-	font-size: 24px;
-	line-height: 1.17;
+	@media screen and (max-width: 767px) {
+		font-size: 24px;
+		line-height: 1.17;
+	}
+
+	@media screen and (max-width: 479px) {
+		font-size: 5vw;
+	}
 }
 
 .contacts-header__link--tel {
-	order: 1;
+	@media screen and (max-width: 767px) {
+		font-size: 34px;
+		line-height: 1.17;
+	}
 
-	font-size: 34px;
-	line-height: 1.17;
+	@media screen and (max-width: 479px) {
+		font-size: 7.08vw;
+	}
 }
 
 .nav__link,
@@ -212,7 +223,7 @@ header {
 
 .header-social {
 	display: flex;
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
 	gap: 20px;
 
 	@media screen and (min-width: 768px) {
@@ -231,6 +242,10 @@ header {
 	letter-spacing: 0.02em;
 
 	color: var(--text-selection-color);
+
+	@media screen and (max-width: 479px) {
+		font-size: 3.75vw;
+	}
 
 	.header-social__item:not(:last-child) &::after {
 		position: absolute;

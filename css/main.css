@@ -623,6 +623,7 @@ header {
 
 @media screen and (max-width: 767px) {
   .contacts-header__link--mail {
+    color: var(--descriptions-text-color);
     font-size: 24px;
     line-height: 1.17;
   }
@@ -635,6 +636,7 @@ header {
 
 @media screen and (max-width: 767px) {
   .contacts-header__link--tel {
+    color: var(--text-selection-color);
     font-size: 34px;
     line-height: 1.17;
   }
@@ -650,7 +652,6 @@ header {
   display: block;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
   -webkit-transition: color 250ms var(--cubic-bezier);
   transition: color 250ms var(--cubic-bezier);
 }
@@ -669,6 +670,7 @@ header {
 
 .nav__link {
   position: relative;
+  color: var(--main-text-color);
 }
 @media screen and (min-width: 768px) {
   .nav__link {
@@ -685,7 +687,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  color: var(--descriptions-text-color);
+}
+@media screen and (min-width: 768px) {
+  .contacts-header__link {
+    color: var(--descriptions-text-color);
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts-header__link {
@@ -816,7 +822,7 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .benefits__item {
+  .benefits__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -951,7 +957,7 @@ header {
   background-color: var(--main-background-color);
 }
 @media screen and (max-width: 767px) {
-  .team__item {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }

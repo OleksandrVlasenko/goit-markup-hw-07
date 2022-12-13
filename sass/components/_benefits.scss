@@ -5,22 +5,23 @@
 .benefits-list {
 	@media screen and (min-width: 768px) {
 		display: flex;
-    flex-wrap: wrap;
+		flex-wrap: wrap;
 		gap: 30px;
 	}
 }
 
 .benefits__item {
+	&:not(:last-child) {
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		width: calc((100% - 30px) / 2);
 	}
 
-  @media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1200px) {
 		width: calc((100% - 3 * 30px) / 4);
 	}
 }

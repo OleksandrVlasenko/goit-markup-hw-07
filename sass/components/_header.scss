@@ -70,10 +70,6 @@ header {
 		transform: translateX(0);
 		transition: transform 250ms var(--cubic-bezier);
 	}
-
-	// @media screen and (max-width: 767px) and (orientation: landscape) {
-	// 	height: 796px;
-	// }
 }
 
 .mob-menu--is-open {
@@ -170,6 +166,7 @@ header {
 
 .contacts-header__link--mail {
 	@media screen and (max-width: 767px) {
+		color: var(--descriptions-text-color);
 		font-size: 24px;
 		line-height: 1.17;
 	}
@@ -181,6 +178,7 @@ header {
 
 .contacts-header__link--tel {
 	@media screen and (max-width: 767px) {
+		color: var(--text-selection-color);
 		font-size: 34px;
 		line-height: 1.17;
 	}
@@ -196,7 +194,6 @@ header {
 	font-weight: 500;
 
 	letter-spacing: 0.02em;
-	color: var(--main-text-color);
 
 	transition: color 250ms var(--cubic-bezier);
 
@@ -214,6 +211,8 @@ header {
 .nav__link {
 	position: relative;
 
+	color: var(--main-text-color);
+
 	@media screen and (min-width: 768px) {
 		padding-top: 32px;
 		padding-bottom: 32px;
@@ -224,7 +223,10 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	color: var(--descriptions-text-color);
+
+	@media screen and (min-width: 768px) {
+		color: var(--descriptions-text-color);
+	}
 
 	@media screen and (min-width: 1200px) {
 		padding-top: 32px;
@@ -242,7 +244,6 @@ header {
 
 .header-social {
 	display: flex;
-	// flex-wrap: wrap;
 	gap: 20px;
 
 	@media screen and (min-width: 768px) {

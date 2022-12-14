@@ -10,14 +10,38 @@
 	text-align: center;
 
 	background-color: var(--background-hero);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	// Mobile background
 	background-image: linear-gradient(
 			rgba(47, 48, 58, 0.4),
 			rgba(47, 48, 58, 0.4)
 		),
 		url(../images/hero/hero-mobile.jpg);
-	background-position: center;	
-	background-size: cover;
 
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/hero/hero-mobile2x.jpg);
+	}
+
+	@media (min-device-pixel-ratio: 3),
+		(min-resolution: 288dpi),
+		(min-resolution: 3dppx) {
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/hero/hero-mobile3x.jpg);
+	}
+
+	// Tablet background
 	@media screen and (min-width: 768px) {
 		max-width: 768px;
 		background-image: linear-gradient(
@@ -25,8 +49,29 @@
 				rgba(47, 48, 58, 0.4)
 			),
 			url(../images/hero/hero-tablet.jpg);
+
+		@media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/hero/hero-tablet2x.jpg);
+		}
+
+		@media (min-device-pixel-ratio: 3),
+			(min-resolution: 288dpi),
+		(min-resolution: 3dppx) {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/hero/hero-tablet3x.jpg);
+		}
 	}
 
+	// Desktop background
 	@media screen and (min-width: 1200px) {
 		padding-top: 200px;
 		padding-bottom: 200px;
@@ -37,6 +82,26 @@
 				rgba(47, 48, 58, 0.4)
 			),
 			url(../images/hero/hero-desktop.jpg);
+
+		@media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/hero/hero-desktop2x.jpg);
+		}
+
+		@media (min-device-pixel-ratio: 3),
+			(min-resolution: 288dpi),
+		(min-resolution: 3dppx) {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/hero/hero-desktop3x.jpg);
+		}
 	}
 }
 

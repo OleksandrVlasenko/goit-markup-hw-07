@@ -57,7 +57,10 @@ header {
 
 .mobile-menu {
 	width: 100%;
-	overflow-y: scroll;
+
+	&.mob-menu--is-open {
+		overflow-y: scroll;
+	}
 
 	@media screen and (max-width: 767px) {
 		position: fixed;
@@ -79,8 +82,6 @@ header {
 }
 
 .mobile-menu--container {
-	outline: aquamarine solid 1px;
-
 	display: flex;
 	justify-content: space-between;
 

@@ -20,41 +20,94 @@
 	<body>
 		<header>
 			<div class="container main-nav">
-				<nav class="nav">
-					<!-- prettier-ignore -->
-					<a class="logo" href="./index.html" lang="en">					
+				<button
+					class="mob-menu-open__button js-open-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					type="button"
+				>
+					<svg class="mob-menu-open__icon" width="40" height="40" mob-menu-open>
+						<use href="./images/icons.svg#mob-menu"></use>
+					</svg>
+				</button>
+				<!-- prettier-ignore -->
+				<a class="logo" href="./index.html" lang="en">					
 					<span class="logo--text">Web</span>Studio
 				</a>
-					<ul class="nav__menu">
-						<li>
-							<a class="nav__link" href="./index.html">Студія</a>
-						</li>
-						<li>
-							<a class="nav__link current-link" href="./portfolio.html">
-								Портфоліо
-							</a>
-						</li>
-						<li><a class="nav__link" href="#">Контакти</a></li>
-					</ul>
-				</nav>
-				<ul class="contacts-header">
-					<li>
-						<a class="contacts-header__link" href="mailto:info@devstudio.com">
-							<svg class="contacts-header__icon" width="16" height="12">
-								<use href="./images/icons.svg#e-mail"></use>
+				<div class="mobile-menu js-menu-container" mob-menu id="mobile-menu">
+					<div class="mobile-menu--container">
+						<button class="mob-menu-close__button js-close-menu" type="button">
+							<svg
+								class="mob-menu-close__icon"
+								width="40"
+								height="40"
+								mob-menu-close
+							>
+								<use href="./images/icons.svg#close-button"></use>
 							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li>
-						<a class="contacts-header__link" href="tel:+380961111111">
-							<svg class="contacts-header__icon" width="10" height="16">
-								<use href="./images/icons.svg#smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
+						</button>
+
+						<nav class="nav">
+							<ul class="nav__menu">
+								<li>
+									<a class="nav__link" href="./index.html">Студія</a>
+								</li>
+								<li>
+									<a class="nav__link current-link" href="./portfolio.html">
+										Портфоліо
+									</a>
+								</li>
+								<li><a class="nav__link" href="#">Контакти</a></li>
+							</ul>
+						</nav>
+						<ul class="contacts-header">
+							<li class="contacts-header__item--mail">
+								<a
+									class="contacts-header__link contacts-header__link--mail"
+									href="mailto:info@devstudio.com"
+								>
+									<svg class="contacts-header__icon" width="16" height="12">
+										<use href="./images/icons.svg#e-mail"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="contacts-header__item--tel">
+								<a
+									class="contacts-header__link contacts-header__link--tel"
+									href="tel:+380961111111"
+								>
+									<svg class="contacts-header__icon" width="10" height="16">
+										<use href="./images/icons.svg#smartphone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+						<ul class="header-social">
+							<li class="header-social__item">
+								<a class="header-social__link" href="https://instagram.com">
+									Instagram
+								</a>
+							</li>
+							<li class="header-social__item">
+								<a class="header-social__link" href="https://twitter.com">
+									Twitter
+								</a>
+							</li>
+							<li class="header-social__item">
+								<a class="header-social__link" href="https://facebook.com">
+									Facebook
+								</a>
+							</li>
+							<li class="header-social__item">
+								<a class="header-social__link" href="https://linkedin.com">
+									LinkedIn
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -310,7 +363,7 @@
 			<div class="container">
 				<div class="footer">
 					<!-- Contacts information -->
-					<div>
+					<div class="footer--contacts">
 						<!-- prettier-ignore -->
 						<a class="logo logo--footer" href="./index.html" lang="en">
 							<span class="logo--text">Web</span>Studio
@@ -417,8 +470,8 @@
 						</ul>
 					</div>
 					<!-- Subscribe -->
-					<form>
-						<label class="subscribe">
+					<form class="subscribe">
+						<label>
 							<span class="subscribe__title">Підпишіться на розсилку</span>
 							<input
 								class="subscribe__input"
@@ -440,5 +493,12 @@
 				</div>
 			</div>
 		</footer>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>

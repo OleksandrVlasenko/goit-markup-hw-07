@@ -57,6 +57,7 @@ header {
 
 .mobile-menu {
 	width: 100%;
+	z-index: 1000;
 
 	&.mob-menu--is-open {
 		overflow-y: scroll;
